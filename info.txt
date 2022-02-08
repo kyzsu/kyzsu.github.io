@@ -1,0 +1,3 @@
+Tech: 
+1. Next.js
+2. Chakra UI
