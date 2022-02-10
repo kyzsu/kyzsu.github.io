@@ -5,9 +5,14 @@ import {
   Heading,
   Image,
   useColorModeValue,
-  Button
+  Button,
+  Link,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { IoLogoInstagram, IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -102,6 +107,53 @@ const Page = () => {
           <Paragraph>
             Anime, Cooking, Music, Sports and ofc coding \^o^/
           </Paragraph>
+        </Section>
+
+        <Section delay={0.8}>
+          <Heading as="h3" variant="section-title">
+            Socials
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/kyzsu" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @kyzsu
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/willy.co.nz/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  willy.co.nz
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.youtube.com/channel/UC5Y6c5_z086YV6ssM1b8VOQ"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoYoutube} />}
+                >
+                  William Irsal
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
