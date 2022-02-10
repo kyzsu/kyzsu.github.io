@@ -7,8 +7,7 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "prettier": "prettier -write .",
-    "lint": "next lint",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "Immanuel Williams Irsal<willirsal.contact@gmail.com",
