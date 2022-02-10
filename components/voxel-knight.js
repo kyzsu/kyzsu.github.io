@@ -74,7 +74,7 @@ const VoxelKnight = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '../public/knight.obj', {
+      loadGLTFModel(scene, 'knight.obj', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {

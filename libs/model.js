@@ -1,4 +1,4 @@
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 
 export function loadGLTFModel(
   scene,
@@ -7,7 +7,7 @@ export function loadGLTFModel(
 ) {
   const { receiveShadow, castShadow } = options
   return new Promise((resolve, reject) => {
-    const loader = new GLTFLoader()
+    const loader = new OBJLoader()
 
     loader.load(
       glbPath,
