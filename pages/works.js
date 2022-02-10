@@ -1,6 +1,6 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-item'
 import thumbMA from '../public/images/thumbMA.png'
 
 const Works = () => {
@@ -12,13 +12,14 @@ const Works = () => {
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         {/* works */}
         <Section>
-          <GridItem
-            href="https://metrodataacademy.id/"
+          <WorkGridItem
+            // href="https://metrodataacademy.id/"
             title="Metrodata Academy"
             thumbnail={thumbMA}
+            id="metrodata-academy"
           >
             A studying web app owned by Metrodata.
-          </GridItem>
+          </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
