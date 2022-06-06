@@ -38,6 +38,7 @@ const Page = () => {
               Immanuel Williams Irsal
             </Heading>
             <p>Tech 🛠 ( Next / React / Tailwind )</p>
+            <p>Learning 🏫 ( Svelte / Rust / WASM )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -52,7 +53,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/sage.png"
+              src="/images/oxeyedaisy.jpg"
               alt="profile image"
             />
           </Box>
@@ -62,8 +63,10 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            William is a frontend developer based in Jakarta. He is currently
-            working on a project called Metrodata Academy.
+            Hi, I&apos;m Will! I&apos;m 22 and working at MII Metrodata as a
+            frontend developer. My main task is to develop{' '}
+            <strong>Metrodata Academy</strong> which is quite similar to
+            Coursera or Udemy.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
